@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Căn hộ cho thuê - KimAnHome</title>
+    <meta name="description"
+        content="Danh sách căn hộ chung cư cho thuê tại TP.HCM. Tìm kiếm căn hộ phù hợp với nhu cầu và ngân sách của bạn.">
+    <meta name="keywords" content="căn hộ cho thuê, chung cư thuê, bất động sản, TP.HCM, KimAnHome">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+    <link href="apartments.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/logo-slogan.png" alt="KimAnHome" class="navbar-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="apartments-sale.html">Căn hộ Bán</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="apartments-rent.html">Căn hộ Cho Thuê</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Tin tức
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#news">Tin tức</a></li>
+                            <li><a class="dropdown-item" href="index.html#legal">Pháp lý</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Căn hộ chung cư cho thuê</h1>
+                    <p>Tìm kiếm căn hộ phù hợp với nhu cầu và ngân sách của bạn</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-card">
+                <div class="row g-3">
+                    <div class="col-lg-3 col-md-6">
+                        <label class="form-label">Khu vực</label>
+                        <select class="form-select" id="districtFilter">
+                            <option value="">Tất cả khu vực</option>
+                            <option value="quan-1">Quận 1</option>
+                            <option value="quan-2">Quận 2</option>
+                            <option value="quan-3">Quận 3</option>
+                            <option value="quan-7">Quận 7</option>
+                            <option value="quan-9">Quận 9</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <label class="form-label">Loại căn hộ</label>
+                        <select class="form-select" id="typeFilter">
+                            <option value="">Tất cả loại</option>
+                            <option value="1pn">1 Phòng ngủ</option>
+                            <option value="2pn">2 Phòng ngủ</option>
+                            <option value="3pn">3 Phòng ngủ</option>
+                            <option value="penthouse">Penthouse</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <label class="form-label">Giá từ</label>
+                        <select class="form-select" id="priceFromFilter">
+                            <option value="">Không giới hạn</option>
+                            <option value="3000000">3 triệu/tháng</option>
+                            <option value="5000000">5 triệu/tháng</option>
+                            <option value="8000000">8 triệu/tháng</option>
+                            <option value="15000000">15 triệu/tháng</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <label class="form-label">Giá đến</label>
+                        <select class="form-select" id="priceToFilter">
+                            <option value="">Không giới hạn</option>
+                            <option value="8000000">8 triệu/tháng</option>
+                            <option value="15000000">15 triệu/tháng</option>
+                            <option value="25000000">25 triệu/tháng</option>
+                            <option value="50000000">50 triệu/tháng</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 text-center">
+                        <button class="btn btn-primary" onclick="applyFilters()">
+                            <i class="fas fa-search me-2"></i>Tìm kiếm
+                        </button>
+                        <button class="btn btn-outline-secondary ms-2" onclick="clearFilters()">
+                            <i class="fas fa-times me-2"></i>Xóa bộ lọc
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="results-header">
+                        <h3>Kết quả tìm kiếm</h3>
+                        <p class="results-count">Tìm thấy <span id="resultsCount">12</span> căn hộ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="apartmentsList">
+                <!-- Apartment 1 -->
+                <div class="col-lg-3 col-md-6 mb-4" data-district="quan-3" data-type="2pn" data-price="8000000">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Căn hộ thuê 2PN">
+                        <div class="status-badge available">Còn trống</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Căn hộ 2PN</h5>
+                            <p class="apartment-location">Quận 3, TP.HCM</p>
+                            <p class="card-text">Căn hộ 2 phòng ngủ, nội thất đầy đủ, vị trí thuận tiện.</p>
+                            <div class="apartment-price">8 triệu/tháng</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apartment 2 -->
+                <div class="col-lg-3 col-md-6 mb-4" data-district="quan-7" data-type="3pn" data-price="15000000">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Căn hộ thuê 3PN">
+                        <div class="status-badge available">Còn trống</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Căn hộ 3PN</h5>
+                            <p class="apartment-location">Quận 7, TP.HCM</p>
+                            <p class="card-text">Căn hộ 3 phòng ngủ, view đẹp, tiện ích cao cấp.</p>
+                            <div class="apartment-price">15 triệu/tháng</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apartment 3 -->
+                <div class="col-lg-3 col-md-6 mb-4" data-district="quan-1" data-type="penthouse" data-price="50000000">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Căn hộ thuê Penthouse">
+                        <div class="status-badge rented">Đã thuê</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Penthouse</h5>
+                            <p class="apartment-location">Quận 1, TP.HCM</p>
+                            <p class="card-text">Penthouse cao cấp, view toàn thành phố, tiện ích đầy đủ.</p>
+                            <div class="apartment-price">50 triệu/tháng</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apartment 4 -->
+                <div class="col-lg-3 col-md-6 mb-4" data-district="quan-2" data-type="1pn" data-price="5000000">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Căn hộ thuê 1PN">
+                        <div class="status-badge available">Còn trống</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Căn hộ 1PN</h5>
+                            <p class="apartment-location">Quận 2, TP.HCM</p>
+                            <p class="card-text">Căn hộ 1 phòng ngủ, phù hợp cho người độc thân, giá hợp lý.</p>
+                            <div class="apartment-price">5 triệu/tháng</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apartment 5 -->
+                <div class="col-lg-3 col-md-6 mb-4" data-district="quan-1" data-type="2pn" data-price="12000000">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Căn hộ thuê 2PN Premium">
+                        <div class="status-badge available">Còn trống</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Căn hộ 2PN Premium</h5>
+                            <p class="apartment-location">Quận 1, TP.HCM</p>
+                            <p class="card-text">Căn hộ 2PN cao cấp, view sông, tiện ích đầy đủ.</p>
+                            <div class="apartment-price">12 triệu/tháng</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apartment 6 -->
+                <div class="col-lg-3 col-md-6 mb-4" data-district="quan-7" data-type="3pn" data-price="18000000">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Căn hộ thuê 3PN Luxury">
+                        <div class="status-badge available">Còn trống</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Căn hộ 3PN Luxury</h5>
+                            <p class="apartment-location">Quận 7, TP.HCM</p>
+                            <p class="card-text">Căn hộ 3PN sang trọng, thiết kế hiện đại, view đẹp.</p>
+                            <div class="apartment-price">18 triệu/tháng</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apartment 7 -->
+                <div class="col-lg-3 col-md-6 mb-4" data-district="quan-2" data-type="2pn" data-price="7000000">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Căn hộ thuê 2PN Garden">
+                        <div class="status-badge available">Còn trống</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Căn hộ 2PN Garden</h5>
+                            <p class="apartment-location">Quận 2, TP.HCM</p>
+                            <p class="card-text">Căn hộ 2PN view vườn, không gian xanh, yên tĩnh.</p>
+                            <div class="apartment-price">7 triệu/tháng</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apartment 8 -->
+                <div class="col-lg-3 col-md-6 mb-4" data-district="quan-9" data-type="3pn" data-price="16000000">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Căn hộ thuê 3PN Modern">
+                        <div class="status-badge available">Còn trống</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Căn hộ 3PN Modern</h5>
+                            <p class="apartment-location">Quận 9, TP.HCM</p>
+                            <p class="card-text">Căn hộ 3PN thiết kế hiện đại, tiện ích đầy đủ.</p>
+                            <div class="apartment-price">16 triệu/tháng</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apartment 9 -->
+                <div class="col-lg-3 col-md-6 mb-4" data-district="quan-3" data-type="1pn" data-price="4000000">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Căn hộ thuê 1PN Studio">
+                        <div class="status-badge available">Còn trống</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Căn hộ 1PN Studio</h5>
+                            <p class="apartment-location">Quận 3, TP.HCM</p>
+                            <p class="card-text">Căn hộ 1PN studio, thiết kế tối ưu, giá hợp lý.</p>
+                            <div class="apartment-price">4 triệu/tháng</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apartment 10 -->
+                <div class="col-lg-3 col-md-6 mb-4" data-district="quan-1" data-type="penthouse" data-price="80000000">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Penthouse Royal">
+                        <div class="status-badge available">Còn trống</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Penthouse Royal</h5>
+                            <p class="apartment-location">Quận 1, TP.HCM</p>
+                            <p class="card-text">Penthouse cao cấp nhất, view toàn thành phố, tiện ích đầy đủ.</p>
+                            <div class="apartment-price">80 triệu/tháng</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apartment 11 -->
+                <div class="col-lg-3 col-md-6 mb-4" data-district="quan-7" data-type="2pn" data-price="9000000">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Căn hộ thuê 2PN River">
+                        <div class="status-badge available">Còn trống</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Căn hộ 2PN River</h5>
+                            <p class="apartment-location">Quận 7, TP.HCM</p>
+                            <p class="card-text">Căn hộ 2PN view sông, không khí trong lành, yên tĩnh.</p>
+                            <div class="apartment-price">9 triệu/tháng</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apartment 12 -->
+                <div class="col-lg-3 col-md-6 mb-4" data-district="quan-2" data-type="3pn" data-price="20000000">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Căn hộ thuê 3PN Family">
+                        <div class="status-badge available">Còn trống</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Căn hộ 3PN Family</h5>
+                            <p class="apartment-location">Quận 2, TP.HCM</p>
+                            <p class="card-text">Căn hộ 3PN lý tưởng cho gia đình, tiện ích đầy đủ.</p>
+                            <div class="apartment-price">20 triệu/tháng</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>KimAnHome</h5>
+                    <p>Chuyên cung cấp căn hộ chung cư cao cấp bán và cho thuê tại Việt Nam. Dịch vụ uy tín, giá cả hợp
+                        lý.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Dịch vụ</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="apartments-sale.html">Mua bán căn hộ</a></li>
+                        <li><a href="apartments-rent.html">Cho thuê căn hộ</a></li>
+                        <li><a href="index.html#legal">Tư vấn pháp lý</a></li>
+                        <li><a href="index.html#services">Đầu tư bất động sản</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Dự án</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html#apartments-sale">Dự án nổi bật</a></li>
+                        <li><a href="apartments-sale.html">Căn hộ bán</a></li>
+                        <li><a href="apartments-rent.html">Căn hộ cho thuê</a></li>
+                        <li><a href="index.html#apartments-sale">Dự án mới</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>Thông tin liên hệ</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>123 Đường ABC, Quận 1, TP.HCM</li>
+                        <li><i class="fas fa-phone me-2"></i>+84 123 456 789</li>
+                        <li><i class="fas fa-envelope me-2"></i>info@kimanhome.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2024 KimAnHome. Tất cả quyền được bảo lưu.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script src="apartments.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KimAnHome - Căn hộ chung cư bán và cho thuê</title>
+    <meta name="description"
+        content="KimAnHome - Chuyên cung cấp căn hộ chung cư cao cấp bán và cho thuê tại Việt Nam. Dịch vụ uy tín, giá cả hợp lý.">
+    <meta name="keywords" content="căn hộ chung cư, bán căn hộ, cho thuê căn hộ, bất động sản, KimAnHome">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="Images/logo-slogan.png" alt="KimAnHome" class="navbar-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="apartments-sale.html">Căn hộ Bán</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="apartments-rent.html">Căn hộ Cho Thuê</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Tin tức
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#news">Tin tức</a></li>
+                            <li><a class="dropdown-item" href="#legal">Pháp lý</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Tìm Ngôi Nhà Mơ Ước Của Bạn</h1>
+                        <p class="hero-subtitle">Chuyên cung cấp căn hộ chung cư cao cấp bán và cho thuê với giá cả hợp
+                            lý</p>
+                        <a href="#apartments-sale" class="btn btn-hero">Khám phá ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="apartments-sale" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Dự án nổi bật</h2>
+            <h3 class="section-subtitle">Căn Hộ Chung Cư Bán Chuyển Nhượng</h3>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Căn hộ 2PN">
+                        <div class="status-badge selling">Đang bán</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Căn hộ 2PN</h5>
+                            <p class="apartment-location">Quận 3, TP.HCM</p>
+                            <p class="card-text">Căn hộ 2 phòng ngủ, thiết kế hiện đại, đầy đủ nội thất.</p>
+                            <div class="apartment-price">2.1 tỷ VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Căn hộ 3PN">
+                        <div class="status-badge selling">Đang bán</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Căn hộ 3PN</h5>
+                            <p class="apartment-location">Quận 7, TP.HCM</p>
+                            <p class="card-text">Căn hộ 3 phòng ngủ, view sông, tiện ích cao cấp.</p>
+                            <div class="apartment-price">3.5 tỷ VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Căn hộ Penthouse">
+                        <div class="status-badge sold">Đã bán</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Penthouse</h5>
+                            <p class="apartment-location">Quận 1, TP.HCM</p>
+                            <p class="card-text">Penthouse cao cấp, view 360 độ, thiết kế độc đáo.</p>
+                            <div class="apartment-price">8.5 tỷ VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Căn hộ 1PN">
+                        <div class="status-badge selling">Đang bán</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Căn hộ 1PN</h5>
+                            <p class="apartment-location">Quận 2, TP.HCM</p>
+                            <p class="card-text">Căn hộ 1 phòng ngủ, phù hợp cho người độc thân, giá hợp lý.</p>
+                            <div class="apartment-price">1.8 tỷ VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <a href="apartments-sale.html" class="btn btn-primary">
+                        Xem tất cả dự án
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Dịch vụ của chúng tôi</h2>
+            <p class="section-subtitle">Chúng tôi cung cấp đầy đủ các dịch vụ bất động sản chuyên nghiệp</p>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h5>Mua bán căn hộ</h5>
+                        <p>Tư vấn và hỗ trợ mua bán căn hộ chung cư với giá tốt nhất</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <h5>Cho thuê căn hộ</h5>
+                        <p>Dịch vụ cho thuê căn hộ dài hạn và ngắn hạn uy tín</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h5>Tư vấn pháp lý</h5>
+                        <p>Hỗ trợ tư vấn pháp lý và thủ tục mua bán bất động sản</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h5>Đầu tư bất động sản</h5>
+                        <p>Tư vấn đầu tư bất động sản sinh lời cao và an toàn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apartments for Rent Section -->
+    <section id="apartments-rent" class="py-5 bg-light-section">
+        <div class="container">
+            <h2 class="section-title">Căn Hộ Chung Cư Cho Thuê</h2>
+            <p class="section-subtitle">Những căn hộ cho thuê với giá cả hợp lý và tiện nghi đầy đủ</p>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Căn hộ thuê 2PN">
+                        <div class="status-badge available">Còn trống</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Căn hộ 2PN</h5>
+                            <p class="apartment-location">Quận 3, TP.HCM</p>
+                            <p class="card-text">Căn hộ 2 phòng ngủ, nội thất đầy đủ, vị trí thuận tiện.</p>
+                            <div class="apartment-price">8 triệu/tháng</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Căn hộ thuê 3PN">
+                        <div class="status-badge available">Còn trống</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Căn hộ 3PN</h5>
+                            <p class="apartment-location">Quận 7, TP.HCM</p>
+                            <p class="card-text">Căn hộ 3 phòng ngủ, view đẹp, tiện ích cao cấp.</p>
+                            <div class="apartment-price">15 triệu/tháng</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Căn hộ thuê Penthouse">
+                        <div class="status-badge rented">Đã thuê</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Penthouse</h5>
+                            <p class="apartment-location">Quận 1, TP.HCM</p>
+                            <p class="card-text">Penthouse cao cấp, view toàn thành phố, tiện ích đầy đủ.</p>
+                            <div class="apartment-price">50 triệu/tháng</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Căn hộ thuê 1PN">
+                        <div class="status-badge available">Còn trống</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Căn hộ 1PN</h5>
+                            <p class="apartment-location">Quận 2, TP.HCM</p>
+                            <p class="card-text">Căn hộ 1 phòng ngủ, phù hợp cho người độc thân, giá hợp lý.</p>
+                            <div class="apartment-price">5 triệu/tháng</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <a href="apartments-rent.html" class="btn btn-primary">
+                        Xem tất cả dự án
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Thành tựu của chúng tôi</h2>
+            <p class="section-subtitle">Những con số ấn tượng thể hiện sự tin tưởng của khách hàng</p>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="achievement-item">
+                        <div class="achievement-number">500+</div>
+                        <h5>Dự án đã hoàn thành</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="achievement-item">
+                        <div class="achievement-number">2000+</div>
+                        <h5>Khách hàng hài lòng</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="achievement-item">
+                        <div class="achievement-number">15+</div>
+                        <h5>Năm kinh nghiệm</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="achievement-item">
+                        <div class="achievement-number">98%</div>
+                        <h5>Tỷ lệ hài lòng</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Second Featured Projects Section -->
+    <section class="py-5 bg-light-section">
+        <div class="container">
+            <h2 class="section-title">Dự án nổi bật</h2>
+            <p class="section-subtitle">Những dự án mới nhất đang được triển khai</p>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Dự án Sky Garden">
+                        <div class="card-body">
+                            <h5 class="card-title">Sky Garden</h5>
+                            <p class="apartment-location">Quận 9, TP.HCM</p>
+                            <p class="card-text">Dự án căn hộ xanh với không gian mở, tiện ích hiện đại và thiết kế thân
+                                thiện môi trường.</p>
+                            <div class="apartment-price">Từ 1.8 tỷ VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Dự án Ocean View">
+                        <div class="card-body">
+                            <h5 class="card-title">Ocean View</h5>
+                            <p class="apartment-location">Quận 4, TP.HCM</p>
+                            <p class="card-text">Căn hộ view biển với thiết kế sang trọng, tiện ích resort và dịch vụ
+                                cao cấp.</p>
+                            <div class="apartment-price">Từ 4.5 tỷ VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Dự án City Center">
+                        <div class="card-body">
+                            <h5 class="card-title">City Center</h5>
+                            <p class="apartment-location">Quận 1, TP.HCM</p>
+                            <p class="card-text">Căn hộ trung tâm thành phố, vị trí vàng, tiện ích đầy đủ và giao thông
+                                thuận tiện.</p>
+                            <div class="apartment-price">Từ 6.2 tỷ VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card-apartment">
+                        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Dự án Green Valley">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Valley</h5>
+                            <p class="apartment-location">Quận 2, TP.HCM</p>
+                            <p class="card-text">Dự án căn hộ xanh với không gian sống trong lành, gần gũi thiên nhiên.
+                            </p>
+                            <div class="apartment-price">Từ 2.8 tỷ VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Khách hàng nói gì về chúng tôi</h2>
+            <p class="section-subtitle">Những phản hồi tích cực từ khách hàng đã sử dụng dịch vụ</p>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Dịch vụ tư vấn rất chuyên nghiệp, nhân viên nhiệt tình và hỗ trợ
+                            tận tình. Tôi đã tìm được căn hộ ưng ý với giá cả hợp lý."</p>
+                        <div class="testimonial-author">
+                            <strong>Anh Minh</strong><br>
+                            <small>Khách hàng mua căn hộ</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"KimAnHome đã giúp tôi cho thuê căn hộ nhanh chóng với giá tốt. Dịch
+                            vụ hậu mãi rất tốt, tôi rất hài lòng."</p>
+                        <div class="testimonial-author">
+                            <strong>Chị Lan</strong><br>
+                            <small>Khách hàng cho thuê</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Tư vấn pháp lý rất chi tiết và chính xác. Nhờ có KimAnHome mà tôi
+                            yên tâm trong quá trình mua bán bất động sản."</p>
+                        <div class="testimonial-author">
+                            <strong>Anh Tuấn</strong><br>
+                            <small>Nhà đầu tư</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Website dễ sử dụng, thông tin chi tiết và chính xác. Tôi đã tìm
+                            được căn hộ phù hợp chỉ sau 1 tuần tìm kiếm."</p>
+                        <div class="testimonial-author">
+                            <strong>Chị Hương</strong><br>
+                            <small>Khách hàng mới</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="py-5 bg-light-section">
+        <div class="container">
+            <h2 class="section-title">Tin tức</h2>
+            <p class="section-subtitle">Cập nhật những tin tức mới nhất về thị trường bất động sản</p>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="news-card">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Tin tức 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Xu hướng thị trường bất động sản 2024</h5>
+                            <p class="card-text">Phân tích chi tiết về xu hướng và dự báo thị trường bất động sản trong
+                                năm 2024.</p>
+                            <small class="text-muted">15/12/2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="news-card">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Tin tức 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Hướng dẫn mua nhà cho người mới bắt đầu</h5>
+                            <p class="card-text">Những lưu ý quan trọng và kinh nghiệm thực tế khi mua nhà lần đầu.</p>
+                            <small class="text-muted">10/12/2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="news-card">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Tin tức 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Pháp lý mua bán bất động sản</h5>
+                            <p class="card-text">Những quy định pháp lý mới nhất về mua bán bất động sản cần biết.</p>
+                            <small class="text-muted">05/12/2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="news-card">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Tin tức 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Đầu tư bất động sản thông minh</h5>
+                            <p class="card-text">Chiến lược đầu tư bất động sản hiệu quả và an toàn cho nhà đầu tư.</p>
+                            <small class="text-muted">01/12/2023</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Liên hệ với chúng tôi</h2>
+            <p class="section-subtitle">Hãy để lại thông tin để chúng tôi tư vấn miễn phí</p>
+            <div class="row">
+                <!-- Thông tin liên hệ bên trái -->
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-info">
+                        <h3 class="contact-title">Thông tin liên hệ</h3>
+                        <p class="contact-description">Chúng tôi luôn sẵn sàng hỗ trợ và tư vấn cho bạn 24/7. Hãy liên
+                            hệ với chúng tôi để được tư vấn miễn phí về các dự án bất động sản tốt nhất.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Hotline</h4>
+                                    <p>+84 123 456 789</p>
+                                    <p>+84 987 654 321</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <p>info@kimanhome.com</p>
+                                    <p>support@kimanhome.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Địa chỉ</h4>
+                                    <p>123 Đường ABC, Quận 1</p>
+                                    <p>TP. Hồ Chí Minh, Việt Nam</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Giờ làm việc</h4>
+                                    <p>Thứ 2 - Thứ 6: 8:00 - 20:00</p>
+                                    <p>Thứ 7 - Chủ nhật: 9:00 - 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Form liên hệ bên phải -->
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-form">
+                        <h3 class="form-title">Gửi tin nhắn cho chúng tôi</h3>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Họ và tên *</label>
+                                    <input type="text" class="form-control" placeholder="Nhập họ và tên" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Số điện thoại *</label>
+                                    <input type="tel" class="form-control" placeholder="Nhập số điện thoại" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Email *</label>
+                                    <input type="email" class="form-control" placeholder="Nhập email" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Loại dịch vụ</label>
+                                    <select class="form-control">
+                                        <option>Chọn loại dịch vụ quan tâm</option>
+                                        <option>Mua căn hộ</option>
+                                        <option>Thuê căn hộ</option>
+                                        <option>Tư vấn pháp lý</option>
+                                        <option>Đầu tư bất động sản</option>
+                                        <option>Khác</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Nội dung tin nhắn</label>
+                                <textarea class="form-control" rows="5"
+                                    placeholder="Nhập nội dung tin nhắn của bạn..."></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>
+                                    Gửi tin nhắn
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>KimAnHome</h5>
+                    <p>Chuyên cung cấp dịch vụ bất động sản uy tín, chuyên nghiệp với hơn 15 năm kinh nghiệm trong
+                        ngành.</p>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Dịch vụ</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Mua bán căn hộ</a></li>
+                        <li><a href="#">Cho thuê căn hộ</a></li>
+                        <li><a href="#">Tư vấn pháp lý</a></li>
+                        <li><a href="#">Đầu tư bất động sản</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Dự án</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Dự án nổi bật</a></li>
+                        <li><a href="#">Căn hộ bán</a></li>
+                        <li><a href="#">Căn hộ cho thuê</a></li>
+                        <li><a href="#">Dự án mới</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Thông tin liên hệ</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>123 Đường ABC, Quận 1, TP.HCM</li>
+                        <li><i class="fas fa-phone me-2"></i>+84 123 456 789</li>
+                        <li><i class="fas fa-envelope me-2"></i>info@kimanhome.com</li>
+                        <li><i class="fas fa-clock me-2"></i>Thứ 2 - Chủ nhật: 8:00 - 20:00</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2023 KimAnHome. Tất cả quyền được bảo lưu.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
